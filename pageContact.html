@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de contact avec la librairie</title>
+</head>
+<body>
+    <p>Pour nous contacter</p>
+    <form method="post" action="traitement.php">
+        <fieldset>
+            <p>Merci de nous indiquer l'objet de votre envoi</p>
+            <p>
+            <label for="pseudo">Votre pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="ex : MyPseudo" size="30" maxlength="10" autofocus/></p>
+            <br/>
+
+            <label for="password">Votre mot de passe :</label>
+            <input type="password" name="password" id="password"/>
+            <br/>
+            <p>
+            <label for="message">Votre message ..</label><br/>
+            <textarea name="message" id="message"></textarea>
+            </p>
+            <input type="email"/>
+            <input type="tel"/>
+        </fieldset>
+            <p>
+
+                <label for="pays">Dans quel pays habitez-vous ?</label><br/>
+                <select name="pays" id="pays">
+                    <option value="france" selected>France</option>                    
+                    <option value="belgique">Belgique</option>
+                    <option value="canada">Canada</option>
+                    <option value="luxembourg">Luxembourg</option>
+                    <option value="royaumeUni">Royaume-Uni</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </p>
+            <input type="submit" value="envoi"/>
+<!-- DANS LE CSS
+            .textarea{
+                width:;
+                height:;
+                rows:;
+                cols:;
+
+            :required{
+                background-color: green;
+                color: white;
+            }
+            } -->
+
+    </form>
+    <p>Nous traiterons votre demande dans les meilleurs délais</p>
+</body>
+</html>

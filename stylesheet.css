@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    flex-direction: row;
+}
+
+header > h1 {
+    color: white;
+}
+
+.moncompte{
+    color: white;
+}
+
+.panier{
+    color: white;
+}
+
